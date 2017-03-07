@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tztvApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="兔子商城">
+    <meta name="Description" content="您身边的移动购物中心">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <title>兔子商城</title>
+
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/tab.css"/>
+</head>
+<body>
+
+<div class="view-container" style="position: relative;width: 100%;height: 100%">
+    <div class="view-frame" ng-view></div>
+    <div class="view-tabs" my-tabs></div>
+</div>
+
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/angular-route/angular-route.js"></script>
+
+<script src="./js/app.js"></script>
+<script src="./js/directives.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.view-tabs{
+    position: fixed;
+    /*只有定位了的元素才有z-index值，并且默认是0，浮动的没有，从父现象*/
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 50px;
+}
+.tab .tabItem{
+    height: 50px;
+    line-height: 50px;
+    width: 25%;
+    float: left;
+}
+.tab .tabItem a{
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: #333333;
+    text-align: center;
+}
+.tab .tabItem a.active{
+    color: #fede0a;
+}
+.tab .tabItem a img{
+    background: url("../../src/images/tab/home@2x.png") no-repeat;
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    /*contain 会使“最小”边，进行缩放，另一边同比缩放，不一定铺满容器，会完整显示图片。*/
+    /*cover 会使“最大”边，进行缩放，另一边同比缩放，铺满容器，超出部分会溢出。*/
+    background-size: contain;
+}
+.tab .tabItem a.active img{
+    background: url("../../src/images/tab/home_click@2x.png") no-repeat;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    /*contain 会使“最小”边，进行缩放，另一边同比缩放，不一定铺满容器，会完整显示图片。*/
+    /*cover 会使“最大”边，进行缩放，另一边同比缩放，铺满容器，超出部分会溢出。*/
+    background-size: contain;
+}
+.tab .tabItem a span{
+    width: 100%;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.tab li:nth-of-type(1) a .icon-text{
+
+}
+
